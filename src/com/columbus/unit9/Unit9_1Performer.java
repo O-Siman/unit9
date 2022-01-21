@@ -1,8 +1,9 @@
 package com.columbus.unit9;
 
 public class Unit9_1Performer {
-    private String name;
-    private int age;
+
+    private final String name;
+    private final int age;
 
     //Constructors are not inherited
     public Unit9_1Performer() {
@@ -15,8 +16,13 @@ public class Unit9_1Performer {
         age = a;
     }
 
+
     public String getName() {
         return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public void practice() {
@@ -24,6 +30,8 @@ public class Unit9_1Performer {
     }
 
     public void perform() {
+
         System.out.println("I am performing!");
     }
+
 }
