@@ -33,7 +33,7 @@ public class Unit9Main {
         Unit9_1Performer performer = new Unit9_1Performer();
 
         //System.out.println(musicMan.getName());
-        //musicMan.perform();
+        //musicMan.playInstrument();
         //musicMan.practice();
         //System.out.println(musicMan.getInstrument());
         //System.out.println(musicMan.getAge());
@@ -47,7 +47,7 @@ public class Unit9Main {
         ArrayList<String> oneliners = new ArrayList<String>();
         Unit9_6Entertainer Sally = new Unit9_6Comedian("Satire", oneliners);
         //Is this valid?
-        System.out.println(Sally.getTalent());
+        //System.out.println(Sally.getTalent());
         //Why is this not valid?
         //Compile time (Unit9_6Entertainer) vs Run time (Unit9_6Comedian)
         //System.out.println(Sally.tellJoke());
@@ -56,6 +56,21 @@ public class Unit9Main {
         //We fix it by casting, careful with parenthesis
         //System.out.println(((Unit9_6Comedian) Sally).tellJoke());
 
-    }
 
+        Unit9_7ObjectSuperclass objectStuff = new Unit9_7ObjectSuperclass(10);
+        System.out.println(objectStuff);
+        System.out.println(objectStuff);
+
+        Unit9_7ObjectSuperclass2 moreObjectStuff = new Unit9_7ObjectSuperclass2(25, "Bob");
+        //System.out.println(moreObjectStuff);
+
+        Unit9_7ObjectSuperclass objectStuff2 = new Unit9_7ObjectSuperclass(10);
+        //by default .equals checks if the two variables refer to the same object.
+        // We want it to check the info inside the object so we override.
+
+        //System.out.println(objectStuff.equals(objectStuff2));
+
+        //How would I add the equals method to Unit9_7ObjectSuperclass2 to compare names too?
+
+    }
 }

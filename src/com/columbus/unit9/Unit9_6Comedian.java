@@ -11,6 +11,7 @@ public class Unit9_6Comedian extends Unit9_6Entertainer {
         jokes = jks;
     }
 
+    @Override
     public String getTalent() {
         //you can use super methods
         return "Comedy Style: " + super.getTalent();

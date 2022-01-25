@@ -7,7 +7,7 @@ public class Unit9_5References {
     //reference variable is "Polymorphic" when it can refer to objects of
     //different classes at different points in the code.
 
-    //A reference variable can store references to its declared class
+    //Base reference variable can store references to its declared class
     //or to any subclass of its declared class.
 
 
@@ -20,12 +20,18 @@ public class Unit9_5References {
     WritingUtensil mar4 = new GelPen(); //gelPen "is-a" WritingUtensil
 
     public class WritingUtensil {
+        public static void write() {
+            System.out.println("WU");
+        }
     }
 
     public class Marker extends WritingUtensil {
     }
 
     public class Pen extends WritingUtensil {
+        public static void write() {
+            System.out.println("Pen");
+        }
     }
 
     public class GelPen extends Pen {
