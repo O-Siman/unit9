@@ -72,5 +72,9 @@ public class Unit9Main {
 
         //How would I add the equals method to Unit9_7ObjectSuperclass2 to compare names too?
 
+        Unit9_7ObjectSuperclass2 omarUnit9_7ObjectSuperclass2 = new Unit9_7ObjectSuperclass2(10, "Omar");
+        Unit9_7ObjectSuperclass2 felipeUnit9_7ObjectSuperclass2 = new Unit9_7ObjectSuperclass2(10, "Felipe");
+
+        boolean isEqual = omarUnit9_7ObjectSuperclass2.equals(felipeUnit9_7ObjectSuperclass2);
     }
 }
